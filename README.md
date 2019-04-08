@@ -4,13 +4,19 @@
 
 
 
-import pandas as pd from matplotlib import pyplot as plt data = pd.read_csv('countries.csv')
+import pandas as pd 
+from matplotlib import pyplot as plt 
+
+data = pd.read_csv('countries.csv')
 
 data
 
+![03 Displaying the data frame](https://user-images.githubusercontent.com/48648985/55745447-26a7ba80-5a2f-11e9-81cb-3f4e4a4975dc.png)
+
+
 ### This will display the data frame.
-To compare the population growth in the US & China,
-the first step is to isolate the data of each.
+#### To compare the population growth in the US & China,
+#### the first step is to isolate the data of each.
 us = data[data.country == 'United States']
 
 china = data[data.country == 'China']
@@ -19,10 +25,13 @@ us china
 
 # GRAPH 1
 ### Plotting the data:
-plt.plot(china.year, china.population / 106, color='r') plt.plot(us.year, us.population / 106, color='b')
+plt.plot(china.year, china.population / 106, color='r') 
+plt.plot(us.year, us.population / 106, color='b')
 
 ### Formatting Graph 1:
-plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) plt.ylabel('Population in millions', fontsize=16) plt.title('Absolute Population of China & the USA', fontsize=16, color='g') 
+plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) 
+plt.ylabel('Population in millions', fontsize=16) 
+plt.title('Absolute Population of China & the USA', fontsize=16, color='g') 
 
 plt.show()
 
@@ -39,7 +48,9 @@ us.population / us.population.iloc[0] * 100
 plt.plot(china.year, china.population / china.population.iloc[0] *100, color='r') plt.plot(us.year, us.population / us.population.iloc[0] *100, color='b')
 
 ### Plotting Graph 2:
-plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) plt.ylabel('Population Growth (First year = 100%)', fontsize=11) plt.title('% Growth in Population of China & the USA)', fontsize=15, color='g') 
+plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) 
+plt.ylabel('Population Growth (First year = 100%)', fontsize=11) 
+plt.title('% Growth in Population of China & the USA)', fontsize=15, color='g') 
 
 plt.show()
 
