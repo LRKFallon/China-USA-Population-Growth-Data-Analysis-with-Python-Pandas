@@ -22,7 +22,9 @@ us china
 plt.plot(china.year, china.population / 106, color='r') plt.plot(us.year, us.population / 106, color='b')
 
 ### Formatting Graph 1:
-plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) plt.ylabel('Population in millions', fontsize=16) plt.title('Absolute Population of China & the USA', fontsize=16, color='g') plt.show()
+plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) plt.ylabel('Population in millions', fontsize=16) plt.title('Absolute Population of China & the USA', fontsize=16, color='g') 
+
+plt.show()
 
 ![01 Graph 1 Absolute Population of China   the USA](https://user-images.githubusercontent.com/48648985/55744744-88672500-5a2d-11e9-809c-7ae67192a4f0.png)
 
@@ -37,4 +39,9 @@ us.population / us.population.iloc[0] * 100
 plt.plot(china.year, china.population / china.population.iloc[0] *100, color='r') plt.plot(us.year, us.population / us.population.iloc[0] *100, color='b')
 
 ### Plotting Graph 2:
-plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) plt.ylabel('Population Growth (First year = 100%)', fontsize=11) plt.title('% Growth in Population of China & the USA)', fontsize=15, color='g') plt.show()
+plt.legend(['China', 'USA']) plt.xlabel('Year', fontsize=16) plt.ylabel('Population Growth (First year = 100%)', fontsize=11) plt.title('% Growth in Population of China & the USA)', fontsize=15, color='g') 
+
+plt.show()
+
+![02 Graph 2 Percentage Growth in Population of China and the USA](https://user-images.githubusercontent.com/48648985/55745292-cf094f00-5a2e-11e9-911b-98c41450ac52.png)
+
